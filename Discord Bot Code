@@ -1,0 +1,34 @@
+# IMPORT DISCORD.PY. ALLOWS ACCESS TO DISCORD'S API.
+import imp
+import discord
+import json
+
+# GETS THE CLIENT OBJECT FROM DISCORD.PY. CLIENT IS SYNONYMOUS WITH BOT.
+bot = discord.Client()
+
+# EVENT LISTENER FOR WHEN THE BOT HAS SWITCHED FROM OFFLINE TO ONLINE.
+@bot.event
+async def on_ready():
+	# CREATES A COUNTER TO KEEP TRACK OF HOW MANY GUILDS / SERVERS THE BOT IS CONNECTED TO.
+	guild_count = 0
+
+	# LOOPS THROUGH ALL THE GUILD / SERVERS THAT THE BOT IS ASSOCIATED WITH.
+	for guild in bot.guilds:
+		# PRINT THE SERVER'S ID AND NAME.
+		print(f"- {guild.id} (name: {guild.name})")
+
+		# INCREMENTS THE GUILD COUNTER.
+		guild_count = guild_count + 1
+
+	# PRINTS HOW MANY GUILDS / SERVERS THE BOT IS IN.
+	print("The Gaming Center Bot is in " + str(guild_count) + " guilds.")
+
+
+@bot.event
+async def on_message(message):
+    if "game" in message.content:
+        await message.channel.send("The random number is higher or lower than 76. Type higher or lower to confirm your answer!")
+    if "higher" in message.content:
+        await message.channel.send("Correct!")
+
+bot.run("OTUyNjg5NDA1ODIxMzQ1ODIy.Yi5rJg.yiCI0V778L3TbllBu2QHcjh8Nrc")
