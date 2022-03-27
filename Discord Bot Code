@@ -31,4 +31,4 @@ async def on_message(message):
     if "higher" in message.content:
         await message.channel.send("Correct!")
 
-bot.run("OTUyNjg5NDA1ODIxMzQ1ODIy.Yi5rJg.yiCI0V778L3TbllBu2QHcjh8Nrc")
+bot.run("NOT SHOWN")
