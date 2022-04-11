@@ -1,0 +1,50 @@
+from random import random
+import discord
+import json
+from discord.ext import commands
+
+bot = discord.Client()
+
+prefix = ("/")
+
+@bot.event
+async def on_ready():
+    activity = discord.Game(name="!help | Gamers Bot", type=3)
+    await bot.change_presence(status=discord.Status.online, activity=activity)
+    print('Bot is offically online!')
+
+@bot.event
+async def on_message(message):
+        if '!help' in message.content:
+            await message.channel.send("Gamers Gang Help!")
+
+        if '!about' in message.content:
+            await message.channel.send('About Us: Informational Centers: https://github.com/Aiden-GoodarziRad Where we started: #📣announcements')
+
+        if '!leaderboard' in message.content:
+            await message.channel.send('MEE6 leveling dashboard (ONLY WORKS IN THE GAMERS GANG SERVER): https://mee6.xyz/leaderboard/959510929828102224')
+
+        if '!code' in message.content: 
+            await message.channel.send('Source Code: https://github.com/Aiden-GoodarziRad')
+
+        # Cuss words/racial slurs below this comment just so those things will be filtered out and no one can say them
+        
+        if 'fuck' in message.content:
+            await message.delete()
+
+        if 'shit' in message.content:
+            await message.delete()
+
+        if 'damn' in message.content:
+            await message.delete()
+
+        if 'niger' in message.content:
+            await message.delete()
+
+        if 'porn' in message.content:
+            await message.delete()
+
+        if '🖕' in message.content:
+            await message.delete()
+
+bot.run("TOKEN")
