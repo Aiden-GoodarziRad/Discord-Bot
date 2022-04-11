@@ -12,7 +12,7 @@ Other pages:
    Help Center:
       eawfiyhds
    Credits:
-      dasfoijfisd
+      https://github.com/Aiden-GoodarziRad/Discord-Bot/blob/main/Credits
    Other info:
       fjsaldkfjsalfj
    
