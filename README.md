@@ -6,7 +6,7 @@ This repository is supposed to be for the Discord bot as a help center for it. Y
 
 Other pages:
    Bot commmands:
-      https://github.com/Aiden-GoodarziRad/Discord-Bot
+      https://github.com/Aiden-GoodarziRad/Discord-Bot/blob/main/Commands
    Source code:
       https://github.com/Aiden-GoodarziRad/Discord-Bot/blob/main/Source-code
    Help Center:
