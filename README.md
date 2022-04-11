@@ -8,11 +8,11 @@ Other pages:
    Bot commmands:
       https://github.com/Aiden-GoodarziRad/Discord-Bot
    Source code:
-      sajdf
+      https://github.com/Aiden-GoodarziRad/Discord-Bot/blob/main/Source-code
    Help Center:
-      eawfiyhds
+      Coming Soon!
    Credits:
       https://github.com/Aiden-GoodarziRad/Discord-Bot/blob/main/Credits
    Other info:
-      fjsaldkfjsalfj
+      Coming Soon!
    
