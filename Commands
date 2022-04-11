@@ -3,9 +3,11 @@ Here you will find commands for the bot.
 Information commands (Everyone can use these):
    !help - Gives the help list
 
-   !about - About the bot, information of the developer, and the GitHub
+   !about - About the bot, information of the developer, and the GitHub.
    
    !code - Gives the user the source code of the bot (Yes, this is an open source project and you can contribute to it)
+   
+   !credits - Shows the URL to the credits page on GitHub.
    
    Limited use commands (You can use these, they just won't work in other server's. These ones usually work in specific server's and will be listed below):
    
